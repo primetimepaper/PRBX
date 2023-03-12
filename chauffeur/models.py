@@ -1405,7 +1405,8 @@ def load_from_config(model_config):
     @param model_config - appropriate model_config dict for model type
     @return - model object
     """
-    model_type = model_config['type']
+    #model_type = model_config['type']
+    model_type = LstmModel.TYPE
     return MODEL_CLASS_BY_TYPE[model_type](model_config)
 
 

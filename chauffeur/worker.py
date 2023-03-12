@@ -34,9 +34,7 @@ def profiling_sigint_handler(signal, frame):
     ps.print_stats(.2)
     print(s.getvalue())
 
-    print('------------------------')
-    if raw_input('continue? (y/n) ') != 'y':
-        exit(0)
+    print('worker.py line 37 not implemented')
 
 if PROFILING:
     pr = cProfile.Profile()
