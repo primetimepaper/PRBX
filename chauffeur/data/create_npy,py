@@ -1,0 +1,16 @@
+import os
+import csv
+from PIL import Image
+import numpy as np
+
+#csv_path = os.path.join('/data/', 'labels.csv')
+#p = os.path.join('data/', '')
+#print(p)
+#print(csv_path)
+print(os.path.isfile('labels.csv'))
+#file_content = open(os.path.join('./data/', "csv")).read()
+#labels = np.genfromtxt('labels.csv', delimiter=",")
+#print(labels)
+#labels_npy = np.save('labels.npy', labels)
+# train/test/validation indexes as .npy
+# images as .npy
