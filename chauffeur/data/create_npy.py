@@ -37,7 +37,7 @@ for filename in os.listdir(directory):
     if os.path.isfile(f):
         img = Image.open(f)
         #name = 'chauffeur/data/images/' + filename + '.npy'
-        name = 'chauffeur/data/images/' + i + '.npy'
+        name = 'chauffeur/data/images/' + str(i) + '.npy'
         np.save(name, np.asarray(img))
     else:
         print("some images in images_jpg are corrupted.")
