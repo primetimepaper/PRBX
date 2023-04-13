@@ -31,7 +31,7 @@ np.save(ind+'training_indexes.npy', tren_i)
 np.save(ind+'testing_indexes.npy', test_i)
 np.save(ind+'validation_indexes.npy', vali_i)
 
-# images as .npy
+# images as npy
 directory = ind+'images_jpg'
 # iterate over files in that directory
 i = 1
