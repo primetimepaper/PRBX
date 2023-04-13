@@ -11,6 +11,8 @@ import models
 import worker
 import datasets
 
+ind = '/shared/storage/cs/studentscratch/pb1028/new_venv/PRBX/chauffeur/'
+
 #params
 batch_sz = 32
 epochs = 10
@@ -30,7 +32,7 @@ lstm_model_config = LstmModel.create(
     scale=60.0)
 task = {
     'task_id': task_id,
-    'dataset_path': '/data',
+    'dataset_path': (ind+'data'),
     'final': True,
     'model_config': lstm_model_config,
     'training_args': {
@@ -53,7 +55,7 @@ task = {
 
 
 worker.handle_task(
-    task, datasets_dir='chauffeur', models_path='chauffeur/models')
+    task, datasets_dir='ind', models_path=(ind+'models'))
 # LstmModel.fit
 # save weights
 
