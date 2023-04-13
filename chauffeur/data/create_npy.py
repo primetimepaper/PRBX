@@ -1,11 +1,14 @@
 import os
-from PIL import Image
 import numpy as np
+from PIL import Image
 import math
 
-tren_sz = 0.6
-test_sz = 0.2
-vali_sz = 0.2
+#tren_sz = 0.6
+#test_sz = 0.2
+#vali_sz = 0.2
+tren_sz = 0.1
+test_sz = 0.05
+vali_sz = 0.05
 #csv_path = os.path.join('C:/Users/Pratham B/Desktop/UNI_Y3/PRBX/github/PRBX/PRBX/chauffeur/data/', 'labels.csv')
 csv_path = os.path.join('chauffeur/data/', 'labels.csv')
 
@@ -19,7 +22,7 @@ x = math.floor(n*tren_sz)
 y = math.floor(n*test_sz)
 z = math.floor(n*vali_sz)
 
-tren_i = np.arange(0,x)
+tren_i = np.arange(1,x)
 test_i = np.arange(x,x+y)
 vali_i = np.arange(x+y,x+y+z)
 

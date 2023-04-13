@@ -3,7 +3,7 @@ import logging
 import time
 import os
 import csv
-from PIL import Image
+#from PIL import Image
 import numpy as np
 import math
 from models import LstmModel
@@ -40,12 +40,12 @@ task = {
     },
 }
 # np.arr of labels as .npy
-labels = data = np.load('labels.npy')
-print(labels)
+#labels = data = np.load('labels.npy')
+#print(labels)
 
 # train/test/validation indexes as .npy
 #np.arange(3,7) -> array([3, 4, 5, 6])
-n = len(labels)
+#n = len(labels)
 
 
 # images as .npy
